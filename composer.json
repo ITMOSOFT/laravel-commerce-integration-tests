@@ -1,0 +1,10 @@
+{
+"name":"itmosoft/laravel-commerce-integration-tests",
+"description":"Cross-package integration and compatibility tests for the ITMOSOFT Laravel commerce ecosystem.",
+"type":"project","license":"MIT","require":{"php":"^8.3","itmosoft/laravel-product-catalog":"dev-main","itmosoft/laravel-pricing":"dev-main","itmosoft/laravel-inventory":"dev-main","itmosoft/laravel-cart":"dev-main","itmosoft/laravel-checkout":"dev-main","itmosoft/laravel-orders":"dev-main","itmosoft/laravel-payments":"dev-main"},
+"require-dev":{"orchestra/testbench":"^10.0 || ^11.0","phpunit/phpunit":"^11.5 || ^12.0"},
+"repositories":[{"type":"vcs","url":"https://github.com/ITMOSOFT/laravel-product-catalog"},{"type":"vcs","url":"https://github.com/ITMOSOFT/laravel-pricing"},{"type":"vcs","url":"https://github.com/ITMOSOFT/laravel-inventory"},{"type":"vcs","url":"https://github.com/ITMOSOFT/laravel-cart"},{"type":"vcs","url":"https://github.com/ITMOSOFT/laravel-checkout"},{"type":"vcs","url":"https://github.com/ITMOSOFT/laravel-orders"},{"type":"vcs","url":"https://github.com/ITMOSOFT/laravel-payments"}],
+"autoload-dev":{"psr-4":{"ITMOSOFT\\CommerceIntegrationTests\\":"tests/"}},
+"scripts":{"test":"phpunit","test:integration":"phpunit --testsuite=Integration","validate":"composer validate --strict"},
+"minimum-stability":"dev","prefer-stable":true,"config":{"sort-packages":true}
+}
